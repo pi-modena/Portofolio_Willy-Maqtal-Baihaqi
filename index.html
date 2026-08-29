@@ -82,6 +82,11 @@ h3{font-size:19px;line-height:1.3}
 }
 .nav-cta:hover{filter:brightness(1.08)}
 .brand{flex:none}
+@media(max-width:640px){
+  .avatar{width:150px;height:150px;border-radius:30px}
+  .hello{gap:18px}
+  .hello b{font-size:22px}
+}
 @media(max-width:900px){
   .nav-in{gap:14px}
   .brand{font-size:14px}
@@ -94,26 +99,26 @@ h3{font-size:19px;line-height:1.3}
 
 /* ---- hero ---- */
 .hero{position:relative;padding:70px 0 90px;overflow:hidden}
-.hello{display:flex;align-items:center;gap:22px;margin-bottom:34px}
+.hello{display:flex;align-items:center;gap:26px;margin-bottom:38px}
 .avatar{
-  width:108px;height:108px;border-radius:26px;overflow:hidden;flex:none;
+  width:224px;height:224px;border-radius:42px;overflow:hidden;flex:none;
   border:1px solid var(--stroke-hi);
-  box-shadow:0 0 0 8px rgba(157,123,255,.09),0 18px 50px rgba(91,43,201,.45);
+  box-shadow:0 0 0 10px rgba(157,123,255,.09),0 22px 60px rgba(91,43,201,.5);
 }
 .avatar img{width:100%;height:100%;object-fit:cover}
-.hello p{margin:0;font-size:17px;color:var(--muted)}
-.hello b{display:block;font-family:var(--disp);font-size:23px;font-weight:700;color:#fff;letter-spacing:-.01em}
+.hello p{margin:0;font-size:16px;color:var(--muted)}
+.hello b{display:block;font-family:var(--disp);font-size:25px;font-weight:700;color:#fff;letter-spacing:-.01em}
 
-.hero h1{font-size:clamp(34px,5.4vw,60px);line-height:1.12;max-width:16ch;margin:0 0 26px}
+.hero h1{font-size:clamp(22px,2.6vw,31px);line-height:1.34;max-width:38ch;margin:0 0 24px}
 .mark{position:relative;white-space:nowrap;color:var(--violet-br)}
-.mark svg{position:absolute;left:-6%;top:-16%;width:112%;height:132%;overflow:visible}
+.mark svg{position:absolute;left:-3.5%;top:-9%;width:107%;height:118%;overflow:visible}
 .mark svg ellipse{fill:none;stroke:var(--violet);stroke-width:2.2;stroke-linecap:round;
   stroke-dasharray:640;stroke-dashoffset:640;animation:draw 1.5s .5s cubic-bezier(.4,.1,.3,1) forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 
-.hero-role{font-family:var(--disp);font-weight:700;font-size:clamp(21px,2.7vw,28px);margin:0 0 8px}
+.hero-role{font-family:var(--disp);font-weight:700;font-size:clamp(17px,1.7vw,20px);margin:0 0 8px}
 .hero-role .dot{color:var(--violet)}
-.hero-now{color:var(--muted);margin:0 0 30px;font-size:16.5px}
+.hero-now{color:var(--muted);margin:0 0 30px;font-size:15.5px}
 .hero-now b{color:var(--violet-br);font-weight:600}
 .hero-info{display:flex;flex-wrap:wrap;gap:10px}
 .pill{
@@ -284,7 +289,7 @@ footer{border-top:1px solid rgba(160,128,255,.13);padding:26px 0;background:var(
       <p>Hello! I am<b>Willy Maqtal Baihaqi</b></p>
     </div>
     <h1 class="rv">Turning after-sales service data into monitoring systems, dashboards, and
-      <span class="mark">improvement programs<svg viewBox="0 0 400 80" aria-hidden="true"><ellipse cx="200" cy="40" rx="196" ry="36"/></svg></span>.
+      <span class="mark">improvement programs<svg viewBox="0 0 400 80" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="200" cy="40" rx="197" ry="37" vector-effect="non-scaling-stroke"/></svg></span>.
     </h1>
     <p class="hero-role rv">I'm a Service Performance &amp; Data Analytics Professional<span class="dot">.</span></p>
     <p class="hero-now rv">Currently at <b>PT MODENA Indonesia</b> — Customer Care &amp; After Sales.</p>
